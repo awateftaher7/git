@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تسجيل الدخول</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #4A148C, #7B1FA2);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      direction: rtl;
+    }
+
+    .login-box {
+      background-color: white;
+      display: flex;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    .login-form {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .login-form h2 {
+      margin-bottom: 30px;
+      color: #4A148C;
+      text-align: center;
+    }
+
+    .login-form label {
+      font-size: 15px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4A148C;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .login-form button:hover {
+      background-color: #6A1B9A;
+    }
+
+    .login-image {
+      flex: 1;
+      background: url('https://i.imgur.com/lhKrb41.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    @media (max-width: 768px) {
+      .login-box {
+        flex-direction: column;
+      }
+
+      .login-image {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <div class="login-form">
+      <h2>مرحباً بك 👋</h2>
+      <form>
+        <label for="username">اسم المستخدم</label>
+        <input type="text" id="username" placeholder="ادخل اسم المستخدم">
+
+        <label for="password">كلمة المرور</label>
+        <input type="password" id="password" placeholder="ادخل كلمة المرور">
+
+        <button type="submit">تسجيل الدخول</button>
+      </form>
+    </div>
+    <div class="login-image"></div>
+  </div>
+
+</body>
+</html>
